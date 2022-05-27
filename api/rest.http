@@ -1,0 +1,41 @@
+ 
+### root api endponit
+GET http://localhost:8000
+
+
+#Task apis
+### get task 
+GET http://localhost:8000/api/v1/tasks
+
+### post task 
+POST http://localhost:8000/api/v1/tasks
+Content-Type:  application/json
+
+{
+    "task": "reading",
+    "hr": 5
+   
+}
+
+### update task 
+PATCH  http://localhost:8000/api/v1/tasks
+Content-Type:  application/json
+
+{
+    "_id": "628861966bafd302c71bb2ba",
+    "taskType": "testList"
+   
+}
+
+### delete task 
+### DELETE http://localhost:8000/api/v1/tasks/62804d7e647ba135fcd80709
+
+### delete all tasks
+DELETE http://localhost:8000/api/v1/tasks
+Content-Type:  application/json
+
+{
+    "data": [
+      "62806b2246de7249401715f9" 
+    ]
+}
